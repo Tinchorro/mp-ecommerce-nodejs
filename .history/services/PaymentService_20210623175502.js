@@ -54,8 +54,8 @@ class PaymentService {
         ],
         excluded_payment_types: [{ id: "atm" }],
         installments: 6,
-        default_installments: 6,
-        label: 'Pagar la compra', // Cambia el texto del botón de pago (opcional)
+        default_installments: 6
+        label: 'Pagar', // Cambia el texto del botón de pago (opcional)
       },
       back_urls: {
         success: "https://martinroman-mp-ecommerce-no.herokuapp.com/success",
@@ -73,7 +73,6 @@ class PaymentService {
           "x-integrator-id": "dev_24c65fb163bf11ea96500242ac130004"
         }
       });
-      console.log(request.data)
       return request.data;
     } catch (e) {
       console.log(e);
