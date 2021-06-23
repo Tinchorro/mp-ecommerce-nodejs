@@ -37,18 +37,12 @@ app.get("/success", (req, res) => {
 });
 
 app.get("/error", (req, res) => {
-  res.render("failure");
+  res.render("fa");
 });
 
 app.get("/pending", (req, res) => {
   res.render("pending");
 });
-
-app.post("/payment/new", (req, res) =>
-  PaymentInstance.getMercadoPagoLink(req, res)
-);
-
-app.post("/webhook", (req, res) => PaymentInstance.webhook(req, res));
 
 
 app.listen(port);

@@ -44,11 +44,5 @@ app.get("/pending", (req, res) => {
   res.render("pending");
 });
 
-app.post("/payment/new", (req, res) =>
-  PaymentInstance.getMercadoPagoLink(req, res)
-);
-
-app.post("/webhook", (req, res) => PaymentInstance.webhook(req, res));
-
 
 app.listen(port);
