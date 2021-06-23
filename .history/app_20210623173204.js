@@ -32,24 +32,6 @@ app.get('/detail', function (req, res) {
     res.render('detail', req.query);
 });
 
-app.get("/success", (req, res) => {
-  res.render("success", req.query);
-});
-
-app.get("/failure", (req, res) => {
-  res.render("failure");
-});
-
-app.get("/pending", (req, res) => {
-  res.render("pending");
-});
-
-app.post("/payment/new", (req, res) =>
-  PaymentInstance.getMercadoPagoLink(req, res)
-);
-
-app.post("/webhook", (req, res) => 
-PaymentInstance.webhook(req, res));
 
 
 app.listen(port);

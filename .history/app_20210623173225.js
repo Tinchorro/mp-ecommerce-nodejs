@@ -36,8 +36,8 @@ app.get("/success", (req, res) => {
   res.render("success", req.query);
 });
 
-app.get("/failure", (req, res) => {
-  res.render("failure");
+app.get("/error", (req, res) => {
+  res.render("");
 });
 
 app.get("/pending", (req, res) => {
