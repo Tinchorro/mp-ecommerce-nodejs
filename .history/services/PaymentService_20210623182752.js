@@ -63,11 +63,13 @@ class PaymentService {
       },
       notification_url: "https://martinroman-mp-ecommerce-no.herokuapp.com/webhook",
       auto_return: "approved",
-      render: {
-        container: '.cho-container',
-        label: 'Pagar la compra',
-      },
+      
+      label: 'Pagar la compra', // Cambia el texto del botón de pago (opcional)
     };
+
+    const render = {
+
+    }
 
     try {
       const request = await axios.post(url, preferences, {

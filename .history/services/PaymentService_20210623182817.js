@@ -66,8 +66,12 @@ class PaymentService {
       render: {
         container: '.cho-container',
         label: 'Pagar la compra',
-      },
+     }
     };
+
+    const render = {
+
+    }
 
     try {
       const request = await axios.post(url, preferences, {

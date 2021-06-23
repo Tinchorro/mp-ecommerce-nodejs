@@ -23,7 +23,7 @@ class PaymentService {
         picture_url: "https://www.facebook.com/100673438542114/photos/a.100678528541605/100674671875324",
         category_id: "1234",
         quantity: parseInt(unit),
-        currency_id: "ARS",
+        currency_id: "UYU",
         unit_price: parseFloat(price)
       }
     ];
@@ -63,10 +63,7 @@ class PaymentService {
       },
       notification_url: "https://martinroman-mp-ecommerce-no.herokuapp.com/webhook",
       auto_return: "approved",
-      render: {
-        container: '.cho-container',
-        label: 'Pagar la compra',
-      },
+      
     };
 
     try {

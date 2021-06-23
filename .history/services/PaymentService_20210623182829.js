@@ -69,6 +69,10 @@ class PaymentService {
       },
     };
 
+    const render = {
+
+    }
+
     try {
       const request = await axios.post(url, preferences, {
         headers: {
