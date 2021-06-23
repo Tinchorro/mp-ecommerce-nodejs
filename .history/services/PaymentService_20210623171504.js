@@ -35,7 +35,7 @@ class PaymentService {
         name: "Lalo",
         surname: "Landa",
         email: "test_user_63274575@testuser.com",
-        date_created: "2021-06-23T12:58:41.425-04:00",
+        date_created: "2015-06-02T12:58:41.425-04:00",
         phone: {
           area_code: "11",
           number: "22223333"
