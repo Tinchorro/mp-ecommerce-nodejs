@@ -4,6 +4,16 @@ var port = process.env.PORT || 3000
 
 var app = express();
 
+
+// SDK de Mercado Pago
+const mercadopago = require ('mercadopago');
+// Agrega credenciales
+mercadopago.configure({
+  access_token: 'PROD_ACCESS_TOKEN'
+});
+
+mercadopago.configurations
+
 const PaymentController = require("./controllers/PaymentController");
 const PaymentService = require("./services/PaymentService");
 const PaymentInstance = new PaymentController(new PaymentService());

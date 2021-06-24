@@ -62,16 +62,12 @@ class PaymentService {
         failure: "https://martinroman-mp-ecommerce-no.herokuapp.com/failure"
       },
       notification_url: "https://martinroman-mp-ecommerce-no.herokuapp.com/webhook",
-      auto_return: "approved"
-    };
+      auto_return: "approved",
 
-    const render = {
-      container: '.cho-container',
-      label: 'Pagar la compra',
     };
 
     try {
-      const request = await axios.post(url, preferences, render, {
+      const request = await axios.post(url, preferences, {
         headers: {
           "Content-Type": "application/json",
           "x-integrator-id": "dev_24c65fb163bf11ea96500242ac130004"

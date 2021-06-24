@@ -65,13 +65,8 @@ class PaymentService {
       auto_return: "approved"
     };
 
-    const render = {
-      container: '.cho-container',
-      label: 'Pagar la compra',
-    };
-
     try {
-      const request = await axios.post(url, preferences, render, {
+      const request = await axios.post(url, preferences, {
         headers: {
           "Content-Type": "application/json",
           "x-integrator-id": "dev_24c65fb163bf11ea96500242ac130004"

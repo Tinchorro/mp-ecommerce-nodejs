@@ -71,7 +71,7 @@ class PaymentService {
     };
 
     try {
-      const request = await axios.post(url, preferences, render, {
+      const request = await axios.post(url, preferences, render {
         headers: {
           "Content-Type": "application/json",
           "x-integrator-id": "dev_24c65fb163bf11ea96500242ac130004"
