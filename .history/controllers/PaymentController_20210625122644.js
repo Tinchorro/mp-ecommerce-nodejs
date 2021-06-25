@@ -16,7 +16,7 @@ class PaymentController {
       console.log(checkout, "checkout response");
       return res.modal(checkout.init_point);
     } catch (err) {
-      res.modal("/");
+      res.redirect("/");
       return res.status(500).json({
         error: true,
         msg: "Hubo un error con Mercado Pago"
