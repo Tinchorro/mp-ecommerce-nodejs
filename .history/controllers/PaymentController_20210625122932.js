@@ -14,7 +14,7 @@ class PaymentController {
         img
       );
       console.log(checkout, "checkout response");
-      return res.redirect(checkout.init_point);
+      return res.modal(checkout.init_point);
     } catch (err) {
       res.redirect("/");
       return res.status(500).json({
