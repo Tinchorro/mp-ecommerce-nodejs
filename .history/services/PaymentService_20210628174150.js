@@ -65,7 +65,7 @@ class PaymentService {
         pending: "https://martinroman-mp-ecommerce-no.herokuapp.com/pending",
         failure: "https://martinroman-mp-ecommerce-no.herokuapp.com/failure"
       },
-      notification_url: "https://hookb.in/6JJKVg97YkHLbb03J1ox",
+      notification_url: "https://martinroman-mp-ecommerce-no.herokuapp.com/webhook",
       auto_return: "approved"
     };
 
