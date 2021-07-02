@@ -81,7 +81,6 @@ class PaymentService {
           "x-integrator-id": "dev_24c65fb163bf11ea96500242ac130004"
         }
       });
-      console.log("respuesta", request.body)
       return request.data;
     } catch (e) {
       console.log(e);
